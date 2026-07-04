@@ -1,0 +1,13 @@
+Platforma e-learningowa (Ocenianie quizów) 
+
+Baza danych: Quiz/Pytanie (treść, poprawna odpowiedź, punkty), Wynik (id użytkownika, zdobyte punkty). 
+
+Webowe UI: Widok rozwiązywania quizu (kilka pytań z opcjami) oraz widok podsumowania z wynikiem. 
+
+Algorytm: Wyliczanie oceny końcowej z testu wielokrotnego wyboru, uwzględniające punkty ujemne za błędną odpowiedź (np. poprawna +1, brak 0, zła -0.5) i wyznaczające zaliczenie (np. próg >50%). 
+
+REST + Swagger: Endpoint POST przyjmujący odpowiedzi ucznia i zwracający wynik procentowy. 
+
+Security: Tylko zalogowani studenci mogą wysłać odpowiedzi. Nauczyciel widzi wyniki wszystkich. 
+
+Test: Test kalkulatora punktacji i wyznaczania progu zaliczeniowego. 
